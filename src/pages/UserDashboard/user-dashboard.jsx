@@ -40,7 +40,7 @@ function UserDashboard() {
 
     const onSearch = (e) => {
         console.log(searchText)
-        const url = getBaseUrl() + `/getArticleByTitle`
+        const url = getBaseUrl() + `getArticleByTitle`
         setsearching(true)
         axios.get(url, {
             params: {
