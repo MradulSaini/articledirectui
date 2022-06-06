@@ -36,9 +36,9 @@ function Register() {
     }
     else {
       if (password.length > 6) {
-        const url = getBaseUrl() + "register"
-        setRegistering(true)
         if (conPassword === password) {
+          const url = getBaseUrl() + "register"
+          setRegistering(true)
           const payload = {
             "email": email,
             "password": password,
